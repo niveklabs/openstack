@@ -3,7 +3,7 @@
 [embedmd]:# (openstack.tf)
 ```tf
 provider "openstack" {
-  version = "1.26.0"
+  version = "1.27.0"
 
   allow_reauth                  = null
   application_credential_id     = null

@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    openstack = ">= 1.26.0"
+    openstack = ">= 1.27.0"
   }
 }
 
@@ -19,6 +19,7 @@ resource "openstack_images_image_v2" "this" {
   tags             = var.tags
   verify_checksum  = var.verify_checksum
   visibility       = var.visibility
+  web_download     = var.web_download
 
   dynamic "timeouts" {
     for_each = var.timeouts

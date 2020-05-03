@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    openstack = ">= 1.26.0"
+    openstack = ">= 1.27.0"
   }
 }
 
@@ -88,7 +88,8 @@ resource "openstack_compute_instance_v2" "this" {
   dynamic "vendor_options" {
     for_each = var.vendor_options
     content {
-      ignore_resize_confirmation = vendor_options.value["ignore_resize_confirmation"]
+      detach_ports_before_destroy = vendor_options.value["detach_ports_before_destroy"]
+      ignore_resize_confirmation  = vendor_options.value["ignore_resize_confirmation"]
     }
   }
 

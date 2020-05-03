@@ -196,7 +196,8 @@ variable "vendor_options" {
   description = "nested mode: NestingSet, min items: 0, max items: 1"
   type = set(object(
     {
-      ignore_resize_confirmation = bool
+      detach_ports_before_destroy = bool
+      ignore_resize_confirmation  = bool
     }
   ))
   default = []

@@ -68,7 +68,8 @@ module "openstack_compute_instance_v2" {
   }]
 
   vendor_options = [{
-    ignore_resize_confirmation = null
+    detach_ports_before_destroy = null
+    ignore_resize_confirmation  = null
   }]
 
   volume = [{

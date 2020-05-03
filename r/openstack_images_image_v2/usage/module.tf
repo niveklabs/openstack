@@ -15,6 +15,7 @@ module "openstack_images_image_v2" {
   tags             = []
   verify_checksum  = null
   visibility       = null
+  web_download     = null
 
   timeouts = [{
     create = null

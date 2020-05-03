@@ -64,7 +64,7 @@ output "labels" {
 }
 
 output "master_addresses" {
-  description = "returns a string"
+  description = "returns a list of string"
   value       = openstack_containerinfra_cluster_v1.this.master_addresses
 }
 
@@ -84,7 +84,7 @@ output "name" {
 }
 
 output "node_addresses" {
-  description = "returns a string"
+  description = "returns a list of string"
   value       = openstack_containerinfra_cluster_v1.this.node_addresses
 }
 
