@@ -4,12 +4,9 @@ terraform {
   }
 }
 
-resource "openstack_identity_role_assignment_v3" "this" {
-  domain_id  = var.domain_id
-  group_id   = var.group_id
+resource "openstack_identity_ec2_credential_v3" "this" {
   project_id = var.project_id
   region     = var.region
-  role_id    = var.role_id
   user_id    = var.user_id
 }
 

@@ -53,6 +53,11 @@ output "flavor" {
   value       = data.openstack_containerinfra_cluster_v1.this.flavor
 }
 
+output "floating_ip_enabled" {
+  description = "returns a bool"
+  value       = data.openstack_containerinfra_cluster_v1.this.floating_ip_enabled
+}
+
 output "id" {
   description = "returns a string"
   value       = data.openstack_containerinfra_cluster_v1.this.id
