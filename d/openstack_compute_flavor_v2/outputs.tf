@@ -8,11 +8,6 @@ output "id" {
   value       = data.openstack_compute_flavor_v2.this.id
 }
 
-output "is_public" {
-  description = "returns a bool"
-  value       = data.openstack_compute_flavor_v2.this.is_public
-}
-
 output "region" {
   description = "returns a string"
   value       = data.openstack_compute_flavor_v2.this.region

@@ -10,6 +10,12 @@ variable "flavor_id" {
   default     = null
 }
 
+variable "is_public" {
+  description = "(optional)"
+  type        = bool
+  default     = null
+}
+
 variable "min_disk" {
   description = "(optional)"
   type        = number

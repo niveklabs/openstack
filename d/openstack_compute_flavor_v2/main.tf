@@ -1,12 +1,13 @@
 terraform {
   required_providers {
-    openstack = ">= 1.28.0"
+    openstack = ">= 1.29.0"
   }
 }
 
 data "openstack_compute_flavor_v2" "this" {
   disk         = var.disk
   flavor_id    = var.flavor_id
+  is_public    = var.is_public
   min_disk     = var.min_disk
   min_ram      = var.min_ram
   name         = var.name

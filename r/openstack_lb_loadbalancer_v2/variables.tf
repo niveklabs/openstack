@@ -52,9 +52,16 @@ variable "vip_address" {
   default     = null
 }
 
-variable "vip_subnet_id" {
-  description = "(required)"
+variable "vip_network_id" {
+  description = "(optional)"
   type        = string
+  default     = null
+}
+
+variable "vip_subnet_id" {
+  description = "(optional)"
+  type        = string
+  default     = null
 }
 
 variable "timeouts" {

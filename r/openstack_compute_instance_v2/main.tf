@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    openstack = ">= 1.28.0"
+    openstack = ">= 1.29.0"
   }
 }
 

@@ -19,7 +19,9 @@ module "openstack_lb_loadbalancer_v2" {
   tenant_id = null
   # vip_address - (optional) is a type of string
   vip_address = null
-  # vip_subnet_id - (required) is a type of string
+  # vip_network_id - (optional) is a type of string
+  vip_network_id = null
+  # vip_subnet_id - (optional) is a type of string
   vip_subnet_id = null
 
   timeouts = [{

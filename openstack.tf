@@ -1,5 +1,5 @@
 provider "openstack" {
-  version = "1.28.0"
+  version = "1.29.0"
 
   # allow_reauth - (optional) is a type of bool
   allow_reauth = null

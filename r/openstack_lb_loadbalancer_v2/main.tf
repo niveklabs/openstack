@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    openstack = ">= 1.28.0"
+    openstack = ">= 1.29.0"
   }
 }
 
@@ -14,6 +14,7 @@ resource "openstack_lb_loadbalancer_v2" "this" {
   security_group_ids    = var.security_group_ids
   tenant_id             = var.tenant_id
   vip_address           = var.vip_address
+  vip_network_id        = var.vip_network_id
   vip_subnet_id         = var.vip_subnet_id
 
   dynamic "timeouts" {

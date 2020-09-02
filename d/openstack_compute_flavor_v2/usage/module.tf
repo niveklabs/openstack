@@ -5,6 +5,8 @@ module "openstack_compute_flavor_v2" {
   disk = null
   # flavor_id - (optional) is a type of string
   flavor_id = null
+  # is_public - (optional) is a type of bool
+  is_public = null
   # min_disk - (optional) is a type of number
   min_disk = null
   # min_ram - (optional) is a type of number
