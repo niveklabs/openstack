@@ -1,26 +1,48 @@
 module "openstack_compute_instance_v2" {
   source = "./modules/openstack/r/openstack_compute_instance_v2"
 
-  access_ip_v4        = null
-  access_ip_v6        = null
-  admin_pass          = null
-  availability_zone   = null
-  config_drive        = null
-  flavor_id           = null
-  flavor_name         = null
-  floating_ip         = null
-  force_delete        = null
-  image_id            = null
-  image_name          = null
-  key_pair            = null
-  metadata            = {}
-  name                = null
-  power_state         = null
-  region              = null
-  security_groups     = []
+  # access_ip_v4 - (optional) is a type of string
+  access_ip_v4 = null
+  # access_ip_v6 - (optional) is a type of string
+  access_ip_v6 = null
+  # admin_pass - (optional) is a type of string
+  admin_pass = null
+  # availability_zone - (optional) is a type of string
+  availability_zone = null
+  # availability_zone_hints - (optional) is a type of string
+  availability_zone_hints = null
+  # config_drive - (optional) is a type of bool
+  config_drive = null
+  # flavor_id - (optional) is a type of string
+  flavor_id = null
+  # flavor_name - (optional) is a type of string
+  flavor_name = null
+  # floating_ip - (optional) is a type of string
+  floating_ip = null
+  # force_delete - (optional) is a type of bool
+  force_delete = null
+  # image_id - (optional) is a type of string
+  image_id = null
+  # image_name - (optional) is a type of string
+  image_name = null
+  # key_pair - (optional) is a type of string
+  key_pair = null
+  # metadata - (optional) is a type of map of string
+  metadata = {}
+  # name - (required) is a type of string
+  name = null
+  # power_state - (optional) is a type of string
+  power_state = null
+  # region - (optional) is a type of string
+  region = null
+  # security_groups - (optional) is a type of set of string
+  security_groups = []
+  # stop_before_destroy - (optional) is a type of bool
   stop_before_destroy = null
-  tags                = []
-  user_data           = null
+  # tags - (optional) is a type of set of string
+  tags = []
+  # user_data - (optional) is a type of string
+  user_data = null
 
   block_device = [{
     boot_index            = null

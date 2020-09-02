@@ -1,30 +1,31 @@
 terraform {
   required_providers {
-    openstack = ">= 1.27.0"
+    openstack = ">= 1.28.0"
   }
 }
 
 resource "openstack_compute_instance_v2" "this" {
-  access_ip_v4        = var.access_ip_v4
-  access_ip_v6        = var.access_ip_v6
-  admin_pass          = var.admin_pass
-  availability_zone   = var.availability_zone
-  config_drive        = var.config_drive
-  flavor_id           = var.flavor_id
-  flavor_name         = var.flavor_name
-  floating_ip         = var.floating_ip
-  force_delete        = var.force_delete
-  image_id            = var.image_id
-  image_name          = var.image_name
-  key_pair            = var.key_pair
-  metadata            = var.metadata
-  name                = var.name
-  power_state         = var.power_state
-  region              = var.region
-  security_groups     = var.security_groups
-  stop_before_destroy = var.stop_before_destroy
-  tags                = var.tags
-  user_data           = var.user_data
+  access_ip_v4            = var.access_ip_v4
+  access_ip_v6            = var.access_ip_v6
+  admin_pass              = var.admin_pass
+  availability_zone       = var.availability_zone
+  availability_zone_hints = var.availability_zone_hints
+  config_drive            = var.config_drive
+  flavor_id               = var.flavor_id
+  flavor_name             = var.flavor_name
+  floating_ip             = var.floating_ip
+  force_delete            = var.force_delete
+  image_id                = var.image_id
+  image_name              = var.image_name
+  key_pair                = var.key_pair
+  metadata                = var.metadata
+  name                    = var.name
+  power_state             = var.power_state
+  region                  = var.region
+  security_groups         = var.security_groups
+  stop_before_destroy     = var.stop_before_destroy
+  tags                    = var.tags
+  user_data               = var.user_data
 
   dynamic "block_device" {
     for_each = var.block_device

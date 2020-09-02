@@ -40,3 +40,9 @@ variable "region" {
   default     = null
 }
 
+variable "tags" {
+  description = "(optional)"
+  type        = set(string)
+  default     = null
+}
+

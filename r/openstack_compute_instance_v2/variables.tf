@@ -22,6 +22,12 @@ variable "availability_zone" {
   default     = null
 }
 
+variable "availability_zone_hints" {
+  description = "(optional)"
+  type        = string
+  default     = null
+}
+
 variable "config_drive" {
   description = "(optional)"
   type        = bool

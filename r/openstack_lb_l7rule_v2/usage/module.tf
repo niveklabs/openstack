@@ -1,15 +1,24 @@
 module "openstack_lb_l7rule_v2" {
   source = "./modules/openstack/r/openstack_lb_l7rule_v2"
 
+  # admin_state_up - (optional) is a type of bool
   admin_state_up = null
-  compare_type   = null
-  invert         = null
-  key            = null
-  l7policy_id    = null
-  region         = null
-  tenant_id      = null
-  type           = null
-  value          = null
+  # compare_type - (required) is a type of string
+  compare_type = null
+  # invert - (optional) is a type of bool
+  invert = null
+  # key - (optional) is a type of string
+  key = null
+  # l7policy_id - (required) is a type of string
+  l7policy_id = null
+  # region - (optional) is a type of string
+  region = null
+  # tenant_id - (optional) is a type of string
+  tenant_id = null
+  # type - (required) is a type of string
+  type = null
+  # value - (required) is a type of string
+  value = null
 
   timeouts = [{
     create = null

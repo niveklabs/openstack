@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    openstack = ">= 1.27.0"
+    openstack = ">= 1.28.0"
   }
 }
 
@@ -12,5 +12,6 @@ resource "openstack_identity_project_v3" "this" {
   name        = var.name
   parent_id   = var.parent_id
   region      = var.region
+  tags        = var.tags
 }
 

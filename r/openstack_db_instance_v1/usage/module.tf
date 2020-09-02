@@ -1,11 +1,16 @@
 module "openstack_db_instance_v1" {
   source = "./modules/openstack/r/openstack_db_instance_v1"
 
+  # configuration_id - (optional) is a type of string
   configuration_id = null
-  flavor_id        = null
-  name             = null
-  region           = null
-  size             = null
+  # flavor_id - (optional) is a type of string
+  flavor_id = null
+  # name - (required) is a type of string
+  name = null
+  # region - (optional) is a type of string
+  region = null
+  # size - (required) is a type of number
+  size = null
 
   database = [{
     charset = null

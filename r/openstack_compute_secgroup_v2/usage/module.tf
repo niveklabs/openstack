@@ -1,9 +1,12 @@
 module "openstack_compute_secgroup_v2" {
   source = "./modules/openstack/r/openstack_compute_secgroup_v2"
 
+  # description - (required) is a type of string
   description = null
-  name        = null
-  region      = null
+  # name - (required) is a type of string
+  name = null
+  # region - (optional) is a type of string
+  region = null
 
   rule = [{
     cidr          = null

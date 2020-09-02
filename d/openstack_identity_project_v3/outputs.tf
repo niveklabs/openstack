@@ -18,6 +18,11 @@ output "region" {
   value       = data.openstack_identity_project_v3.this.region
 }
 
+output "tags" {
+  description = "returns a set of string"
+  value       = data.openstack_identity_project_v3.this.tags
+}
+
 output "this" {
   value = openstack_identity_project_v3.this
 }

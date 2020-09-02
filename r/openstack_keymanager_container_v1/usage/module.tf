@@ -1,9 +1,12 @@
 module "openstack_keymanager_container_v1" {
   source = "./modules/openstack/r/openstack_keymanager_container_v1"
 
-  name   = null
+  # name - (optional) is a type of string
+  name = null
+  # region - (optional) is a type of string
   region = null
-  type   = null
+  # type - (required) is a type of string
+  type = null
 
   acl = [{
     read = [{

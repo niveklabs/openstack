@@ -58,6 +58,12 @@ output "keypair" {
   value       = openstack_containerinfra_cluster_v1.this.keypair
 }
 
+output "kubeconfig" {
+  description = "returns a map of string"
+  value       = openstack_containerinfra_cluster_v1.this.kubeconfig
+  sensitive   = true
+}
+
 output "labels" {
   description = "returns a map of string"
   value       = openstack_containerinfra_cluster_v1.this.labels

@@ -69,6 +69,20 @@ variable "volume_type" {
   default     = null
 }
 
+variable "scheduler_hints" {
+  description = "nested mode: NestingSet, min items: 0, max items: 0"
+  type = set(object(
+    {
+      additional_properties = map(string)
+      different_host        = list(string)
+      local_to_instance     = string
+      query                 = string
+      same_host             = list(string)
+    }
+  ))
+  default = []
+}
+
 variable "timeouts" {
   description = "nested mode: NestingSingle, min items: 0, max items: 0"
   type = set(object(
