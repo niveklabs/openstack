@@ -15,6 +15,8 @@ module "openstack_containerinfra_cluster_v1" {
   fixed_subnet = null
   # flavor - (optional) is a type of string
   flavor = null
+  # floating_ip_enabled - (optional) is a type of bool
+  floating_ip_enabled = null
   # keypair - (optional) is a type of string
   keypair = null
   # labels - (optional) is a type of map of string
@@ -23,6 +25,8 @@ module "openstack_containerinfra_cluster_v1" {
   master_count = null
   # master_flavor - (optional) is a type of string
   master_flavor = null
+  # merge_labels - (optional) is a type of bool
+  merge_labels = null
   # name - (optional) is a type of string
   name = null
   # node_count - (optional) is a type of number

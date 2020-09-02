@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    openstack = ">= 1.29.0"
+    openstack = ">= 1.30.0"
   }
 }
 
@@ -12,10 +12,12 @@ resource "openstack_containerinfra_cluster_v1" "this" {
   fixed_network       = var.fixed_network
   fixed_subnet        = var.fixed_subnet
   flavor              = var.flavor
+  floating_ip_enabled = var.floating_ip_enabled
   keypair             = var.keypair
   labels              = var.labels
   master_count        = var.master_count
   master_flavor       = var.master_flavor
+  merge_labels        = var.merge_labels
   name                = var.name
   node_count          = var.node_count
   region              = var.region

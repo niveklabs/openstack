@@ -4,6 +4,12 @@ variable "admin_state_up" {
   default     = null
 }
 
+variable "allowed_cidrs" {
+  description = "(optional)"
+  type        = list(string)
+  default     = null
+}
+
 variable "connection_limit" {
   description = "(optional)"
   type        = number

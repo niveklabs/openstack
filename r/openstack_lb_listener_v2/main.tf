@@ -1,11 +1,12 @@
 terraform {
   required_providers {
-    openstack = ">= 1.29.0"
+    openstack = ">= 1.30.0"
   }
 }
 
 resource "openstack_lb_listener_v2" "this" {
   admin_state_up            = var.admin_state_up
+  allowed_cidrs             = var.allowed_cidrs
   connection_limit          = var.connection_limit
   default_pool_id           = var.default_pool_id
   default_tls_container_ref = var.default_tls_container_ref

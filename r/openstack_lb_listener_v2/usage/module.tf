@@ -3,6 +3,8 @@ module "openstack_lb_listener_v2" {
 
   # admin_state_up - (optional) is a type of bool
   admin_state_up = null
+  # allowed_cidrs - (optional) is a type of list of string
+  allowed_cidrs = []
   # connection_limit - (optional) is a type of number
   connection_limit = null
   # default_pool_id - (optional) is a type of string

@@ -39,6 +39,12 @@ variable "flavor" {
   default     = null
 }
 
+variable "floating_ip_enabled" {
+  description = "(optional)"
+  type        = bool
+  default     = null
+}
+
 variable "keypair" {
   description = "(optional)"
   type        = string
@@ -60,6 +66,12 @@ variable "master_count" {
 variable "master_flavor" {
   description = "(optional)"
   type        = string
+  default     = null
+}
+
+variable "merge_labels" {
+  description = "(optional)"
+  type        = bool
   default     = null
 }
 
